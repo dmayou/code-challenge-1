@@ -9,7 +9,24 @@ function onReady() {
 
 function generateClicked() {
     numClicks++;
+    $('<button/>')
+        .text('Swap')
+        .on('click', swapBtnClicked);
     $('body')
         .append('<div></div>')
-        .append(`<p>${numClicks}</p>`);
+        .append(`<p>${numClicks}</p>`)
+        .append($('<button/>')
+            .text('Swap')
+            .on('click', swapBtnClicked))
+        .append($('<button/>')
+            .text('Delete')
+            .on('click', deleteBtnClicked));
+}
+
+function swapBtnClicked() {
+    console.log('swap');
+}
+
+function deleteBtnClicked() {
+    console.log('delete');
 }
