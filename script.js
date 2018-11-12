@@ -10,7 +10,8 @@ function onReady() {
 function generateClicked() {
     numClicks++; // keeps track of the number of times clicked, hence number of divs made
     $('body')
-        .append($('<div></div>').addClass('red')
+        .append($('<div></div>')
+            .addClass('red')
             .append(`<p>${numClicks}</p>`)
             .append($('<button/>')
                 .text('Swap')
