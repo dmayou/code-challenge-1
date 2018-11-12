@@ -11,13 +11,13 @@ function generateClicked() {
     numClicks++; // keeps track of the number of times clicked, hence number of divs made
     $('body')
         .append($('<div></div>').addClass('red')
-        .append(`<p>${numClicks}</p>`)
-        .append($('<button/>')
-            .text('Swap')
-            .on('click', swapBtnClicked))
-        .append($('<button/>')
-            .text('Delete')
-            .on('click', deleteBtnClicked))
+            .append(`<p>${numClicks}</p>`)
+            .append($('<button/>')
+                .text('Swap')
+                .on('click', swapBtnClicked))
+            .append($('<button/>')
+                .text('Delete')
+                .on('click', deleteBtnClicked))
         );
 }
 
