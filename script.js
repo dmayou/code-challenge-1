@@ -33,5 +33,5 @@ function swapBtnClicked() {
 }
 
 function deleteBtnClicked() {
-    console.log('delete');
+    $(this).parent().remove();
 }
